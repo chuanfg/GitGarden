@@ -5,6 +5,7 @@ public class Student {
     private String sex;
     private Integer age;
     private Integer score;
+    private String  birth;
 
     @Override
     public String toString() {
