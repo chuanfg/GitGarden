@@ -3,15 +3,29 @@ package com.fgc.file;
 public class Student {
     private String name;
     private String sex;
-    private String age;
+    private Integer age;
+    private Integer score;
 
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", sex='" + sex + '\'' +
-                ", age='" + age + '\'' +
+                ", age=" + age +
+                ", score=" + score +
                 '}';
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
     }
 
     public String getName() {
@@ -28,13 +42,5 @@ public class Student {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
     }
 }
